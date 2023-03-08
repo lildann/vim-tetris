@@ -4,6 +4,15 @@ body {
   font-family: 'Rubik Iso', cursive; /* the text font */
 }
 
+h1 {
+  font-size: 80px;
+}
+
 canvas {
   background-color: black;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
 }
