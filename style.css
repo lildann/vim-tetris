@@ -1,5 +1,9 @@
 body {
-  background-color: aquamarine; /* page background color */
-  color: darkblue; /* the text color */
-  font-family: Georgia, 'Times New Roman', Times, serif; /* the text font */
+  background-color: greenyellow; /* page background color */
+  color: black; /* the text color */
+  font-family: 'Rubik Iso', cursive; /* the text font */
+}
+
+canvas {
+  background-color: black;
 }
