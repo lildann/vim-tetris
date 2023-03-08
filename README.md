@@ -1,26 +1,22 @@
-# Basic website starter
+# Vim Tetris: Colour Pop
 
-This repository contains basic files to get you started with a HTML and Javascript website. No library, nothing fancy.
+A game threefold in its intent to get used to certain vim keys, to teach (children?) about colours, and to teach me about making a game in JavaScript.
 
-## What's in this project?
-← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
+## Ideas
 
-← `index.html`: This is the main HTML page for your site.
+- Use vim keys instead of arrow keys for muscle memory
+- Secondary colour creation when two primary colour blocks collide:
+Blue and Yellow = Green
+Yellow and Red = Orange
+Red and Blue = Purple
 
-← `style.css`: CSS files add styling rules to your content.
 
-← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript.
+# Credits
 
-← `favicon.ico`: This is the icon of your website, that appears in the tab.
+← This project uses the [`Basic website starter`](https://github.com/alicelieutier/minimal-html-starter) template, thanks to Alice Lieutier and her codebar workshop on building a game in JavaScript.
 
-## How to use this project
 
-You could:
+# Setup
 
-* Use [glitch](https://glitch.com/) to experiment with it directly in your browser - Select `New Project` -> `Import from Github` and paste the URL for this project: `https://github.com/alicelieutier/minimal-html-starter`
+← To make API calls, run a local server via [one of these lines in the terminal](https://gist.github.com/willurd/5720255) from the directory where `index.html` exists.
 
-* Download the files on your computer. On github, select `Code` -> `Download Zip`. Once you have the files, you can open `index.html` directly in your browser. If you want to have some javascript making API calls, however, you will need to run a local server. The easiest way is to [run one of these lines in the terminal](https://gist.github.com/willurd/5720255) from the directory where `index.html` is.
-
-Once you are able to see the webpage in your browser, change the files to see how it changes.
-
-💥 Happy experimenting!
