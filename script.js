@@ -15,6 +15,14 @@ let blueSquarePosition = {
 }
 let purpleSquarePosition = blueSquarePosition;
 
+let yellowRectPosition = {
+  left: 120,
+  top: 40,
+}
+let blueRectPosition = {
+  left: 120,
+  top: 300,
+}
 
 function drawRedSquare() {
   ctx.fillStyle = "red";
@@ -32,10 +40,23 @@ function drawPurpleSquare() {
 function drawPurpleWin() {
   ctx.font = "30px Rubik Iso";
   ctx.fillStyle = "lime"
-  ctx.fillText("You made purple!", 10, 50);
+  ctx.fillText("You made purple!", 10, 500);
 }
-drawRedSquare()
-drawBlueSquare()
+function drawYellowRect() {
+  ctx.fillStyle = "yellow";
+  ctx.fillRect(yellowRectPosition.left, yellowRectPosition.top, 120, 40);
+}
+function drawBlueRect() {
+  ctx.fillStyle = "turquoise";
+  ctx.fillRect(blueRectPosition.left, blueRectPosition.top, 120, 40);
+}
+function shapes() {
+  drawRedSquare()
+  drawBlueSquare()
+  drawYellowRect()
+  drawBlueRect()
+}
+shapes()
 
 function listener(event) {
   console.log(event.code)
@@ -46,15 +67,13 @@ function listener(event) {
     // clear the canvas
     ctx.clearRect(0, 0, WIDTH, HEIGHT)
     // draw the shapes
-    drawRedSquare()
-    drawBlueSquare()
+    shapes()
   }
   // When I press the H key, move the blue shape to the left
   if (event.code === 'KeyH') {
     blueSquarePosition.left -= 10
     ctx.clearRect(0, 0, WIDTH, HEIGHT)
-    drawRedSquare()
-    drawBlueSquare()
+    shapes()
   }
   // When red square hits blue square delete both and create a purple square + text
   if (blueSquarePosition.left === redSquarePosition.left) {
@@ -63,6 +82,11 @@ function listener(event) {
     drawPurpleWin()
   }
 
+  if (event.code === 'KeyJ'){
+    yellowRectPosition.top += 10
+    ctx.clearRect(0, 0, WIDTH, HEIGHT)
+    shapes()
+  }
 }
 
 window.addEventListener('keydown', listener) 
